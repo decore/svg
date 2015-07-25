@@ -1,7 +1,7 @@
 // "use strict";
 $(document).ready(function(){
   if ($.browser.msie || $('body').hasClass('no-svg')) {
-    $('head').append('<link href="/img/svg-sprite/css/sprite.css" rel="stylesheet">');
+    $('head').append('<link href="/assets/img/svg/sprite/css/sprite.css" rel="stylesheet">');
   };
 });
 
