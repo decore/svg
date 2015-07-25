@@ -7,7 +7,6 @@ $(document).ready(function(){
 
 (function(document){
   function renderData() {
-    console.log('test');
     var SVG;
     var STYLE;
     var svgUrl = '/assets/img/svg/symbols/svg/symbols.svg'
