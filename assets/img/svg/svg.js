@@ -1,32 +1,30 @@
+// "use strict";
+$(document).ready(function(){
+  if ($.browser.msie || $('body').hasClass('no-svg')) {
+    $('head').append('<link href="/img/svg-sprite/css/sprite.css" rel="stylesheet">');
+  };
+});
+
 (function(document){
-  "use strict";
-  $(document).ready(function(){
-    if ($.browser.msie || $(body).hasClass('no-svg')) {
-      $('head').append('<link href="/dist/backgrounds/css/sprite.css" rel="stylesheet">');
-    }
-  });
-
   function renderData() {
+    console.log('test');
     var SVG;
-    var svgUrl = '/dist/symbols/svg/symbols.svg'
-    $('#data').load(svgUrl, function(result) {
-        SVG = $('#data').html();
+    var STYLE;
+    var svgUrl = '/assets/img/svg/symbols/svg/symbols.svg'
+    var cssUrl = '/assets/img/svg/svg.css'
+    $('body').append('<div id="data-svg"></div>');
+    $('#data-svg').load(svgUrl, function(result) {
+      SVG = $('#data-svg').html();
       document.querySelector("body").insertAdjacentHTML("afterbegin", SVG);
-      $('#data').remove();
+      $('#data-svg').remove();
     });
-    var STYLE = '<style>@-webkit-keyframes spin { 100% { -webkit-transform: r'+
-'otate(360deg); transform: rotate(360deg); } } @keyframes spi'+
-'n { 100% { -webkit-transform: rotate(360deg); transform: rot'+
-'ate(360deg); } } .icon { /* position: relative;*/ display: i'+
-'nline-block; /* width: 100px; height: 100px;*/ /* overflow: '+
-'hidden;*/ } .icon__cnt { width: 100%; height: 100%; /*backgr'+
-'ound: inherit;*/ /*fill: currentColor;*/ /*transform: transl'+
-'ateX(0); Crisp fix for non-retina*/ /*-ms-transform: transla'+
-'te(.5px,-.3px); Crisp fix for IE */ } .icon__spinner { posit'+
-'ion: absolute; top: 0; left: 0; width: 100%; height: 100%; }'+
-'</style>';
+    $('body').append('<div id="data-css"></div>');
+    $('#data-css').load(cssUrl, function(result) {
+      STYLE = $('#data-css').html();
+      document.querySelector("head").insertAdjacentHTML("afterbegin", STYLE);
+      $('#data-css').remove();
+    });
 
-    document.querySelector("head").insertAdjacentHTML("afterbegin", STYLE);
   };
 
   function mods(mod) {
@@ -46,7 +44,7 @@
     var klass   = "icon "+ name +" "+ mod +" "+ (options['class'] || "");
 
 
-    if ($.browser.msie || $(body).hasClass('no-svg')) {
+    if ($.browser.msie || $('body').hasClass('no-svg')) {
       var icon = "";
     } else {
       var icon =  "<svg class='icon__cnt'>"+
@@ -93,5 +91,4 @@
   if (document.addEventListener) {
     document.addEventListener("DOMContentLoaded", ready, false);
   };
-
 })(window.document);
