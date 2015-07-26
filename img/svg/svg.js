@@ -1,7 +1,7 @@
 // "use strict";
 $(document).ready(function(){
   if ($.browser.msie || $('body').hasClass('no-svg')) {
-    $('head').append('<link href="/assets/img/svg/sprite/css/sprite.css" rel="stylesheet">');
+    $('head').append('<link href="/img/svg/sprite/css/sprite.css" rel="stylesheet">');
   };
 });
 
@@ -9,8 +9,8 @@ $(document).ready(function(){
   function renderData() {
     var SVG;
     var STYLE;
-    var svgUrl = '/assets/img/svg/symbols/svg/symbols.svg';
-    var cssUrl = '/assets/img/svg/svg.css';
+    var svgUrl = '/img/svg/symbols/svg/symbols.svg';
+    var cssUrl = '/img/svg/svg.css';
     $.get(svgUrl, function(data) {
       SVG = new XMLSerializer().serializeToString(data.documentElement);
       document.querySelector("body").insertAdjacentHTML("afterbegin", SVG);

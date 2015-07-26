@@ -1,0 +1,245 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 14.482099999999999em 465.9em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+.icon.about-ban:before {
+    background-position: 0em 0em;
+    width: 13.25em;
+    height: 13.043700000000001em;
+}
+
+.icon.advert-site:before {
+    background-position: 0em -13.1em;
+    width: 14.299000000000001em;
+    height: 13.0438em;
+}
+
+.icon.advertese-site-ban:before {
+    background-position: 0em -26.2em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.bed-ban:before {
+    background-position: 0em -39.3em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.brief-case-ban:before {
+    background-position: 0em -52.4em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.card-position-ban:before {
+    background-position: 0em -65.5em;
+    width: 13.735800000000001em;
+    height: 13.7006em;
+}
+
+.icon.clear-advert-s:before {
+    background-position: 0em -79.3em;
+    width: 12.6224em;
+    height: 8.705400000000001em;
+}
+
+.icon.clear-home:before {
+    background-position: 0em -88.1em;
+    width: 8.953700000000001em;
+    height: 10.7258em;
+}
+
+.icon.clear-key:before {
+    background-position: 0em -98.9em;
+    width: 11.4269em;
+    height: 7.997em;
+}
+
+.icon.clear-lamp:before {
+    background-position: 0em -106.9em;
+    width: 11.2499em;
+    height: 12.496599999999999em;
+}
+
+.icon.clear-phone:before {
+    background-position: 0em -119.4em;
+    width: 11.4948em;
+    height: 9.046em;
+}
+
+.icon.clear-prize:before {
+    background-position: 0em -128.5em;
+    width: 7.725499999999999em;
+    height: 10.258199999999999em;
+}
+
+.icon.clear-prizes:before {
+    background-position: 0em -138.8em;
+    width: 7.725499999999999em;
+    height: 10.258199999999999em;
+}
+
+.icon.clear-serch:before {
+    background-position: 0em -149.1em;
+    width: 10.838899999999999em;
+    height: 9.7248em;
+}
+
+.icon.clear-shuttle:before {
+    background-position: 0em -158.9em;
+    width: 12.9378em;
+    height: 13.5006em;
+}
+
+.icon.clear-site:before {
+    background-position: 0em -172.5em;
+    width: 8.7913em;
+    height: 12.4649em;
+}
+
+.icon.clear-speciale:before {
+    background-position: 0em -185em;
+    width: 14.4249em;
+    height: 10.9936em;
+}
+
+.icon.good-proj-ban:before {
+    background-position: 0em -196em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.home:before {
+    background-position: 0em -209.1em;
+    width: 13.25em;
+    height: 13.047999999999998em;
+}
+
+.icon.key:before {
+    background-position: 0em -222.2em;
+    width: 14.482099999999999em;
+    height: 13.0438em;
+}
+
+.icon.lamp:before {
+    background-position: 0em -235.3em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.maps-ban:before {
+    background-position: 0em -248.4em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.my-site-ban:before {
+    background-position: 0em -261.5em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.my_site:before {
+    background-position: 0em -274.6em;
+    width: 13.25em;
+    height: 13.043700000000001em;
+}
+
+.icon.offer-ban:before {
+    background-position: 0em -287.7em;
+    width: 13.933600000000002em;
+    height: 13.0438em;
+}
+
+.icon.prize:before {
+    background-position: 0em -300.8em;
+    width: 13.25em;
+    height: 13.2119em;
+}
+
+.icon.serch:before {
+    background-position: 0em -314.1em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.settle-ban:before {
+    background-position: 0em -327.2em;
+    width: 13.25em;
+    height: 13.0438em;
+}
+
+.icon.shatl:before {
+    background-position: 0em -340.3em;
+    width: 13.25em;
+    height: 14.3924em;
+}
+
+.icon.shuttle:before {
+    background-position: 0em -354.7em;
+    width: 13.25em;
+    height: 14.3924em;
+}
+
+.icon.site:before {
+    background-position: 0em -369.1em;
+    width: 13.25em;
+    height: 13.043700000000001em;
+}
+
+.icon.special-offer:before {
+    background-position: 0em -382.2em;
+    width: 13.735800000000001em;
+    height: 13.7006em;
+}
+
+.icon.special-offer-ban:before {
+    background-position: 0em -396em;
+    width: 13.735800000000001em;
+    height: 13.7006em;
+}
+
+.icon.star-position-ban:before {
+    background-position: 0em -409.8em;
+    width: 13.735800000000001em;
+    height: 13.7006em;
+}
+
+.icon.sticker-arrow:before {
+    background-position: 0em -423.6em;
+    width: 0.9em;
+    height: 3em;
+}
+
+.icon.taken-house-ban:before {
+    background-position: 0em -426.6em;
+    width: 13.399600000000001em;
+    height: 13.0786em;
+}
+
+.icon.telefon:before {
+    background-position: 0em -439.7em;
+    width: 13.7215em;
+    height: 13.0438em;
+}
+
+.icon.telefon-ban:before {
+    background-position: 0em -452.8em;
+    width: 13.25em;
+    height: 13.043600000000001em;
+}
+

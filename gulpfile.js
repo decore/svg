@@ -1,28 +1,28 @@
 var gulp = require('gulp');
-var svgSprite = require("gulp-svg-sprites");
+var svgSprite = require('gulp-svg-sprites');
 var filter = require('gulp-filter');
 var svg2png = require('gulp-svg2png');
 
 gulp.task('svg-sprite', function () {
-    return gulp.src('assets/img/svg/svg/*.svg')
+    return gulp.src('img/svg/svg/*.svg')
         .pipe(svgSprite())
-        .pipe(gulp.dest("assets/img/svg/sprite"))
-        .pipe(filter("assets/img/svg/svg/*.svg"))
+        .pipe(gulp.dest('img/svg/sprite'))
+        .pipe(filter('**/*.svg'))
         .pipe(svg2png())
-        .pipe(gulp.dest("assets/img/svg/sprite"));
+        .pipe(gulp.dest('img/svg/sprite'));
 });
 gulp.task('svg-symbols', function () {
-    return gulp.src('assets/img/svg/svg/*.svg')
+    return gulp.src('img/svg/svg/*.svg')
         .pipe(svgSprite({
             svg: {
-                sprite: "sprite.svg"
+                sprite: 'sprite.svg'
             },
             preview: {
-                sprite: "index.html"
+                sprite: 'index.html'
             },
-            mode: "symbols"
+            mode: 'symbols'
         }))
-        .pipe(gulp.dest("assets/img/svg/symbols"));
+        .pipe(gulp.dest('img/svg/symbols'));
 });
 
 gulp.task('default', ['svg-sprite', 'svg-symbols']);
