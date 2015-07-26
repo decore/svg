@@ -9,20 +9,14 @@ $(document).ready(function(){
   function renderData() {
     var SVG;
     var STYLE;
-    var svgUrl = '/assets/img/svg/symbols/svg/symbols.svg'
-    var cssUrl = '/assets/img/svg/svg.css'
-    $('body').append('<div id="data-svg"></div>');
-    $('#data-svg').load(svgUrl, function(result) {
-      SVG = $('#data-svg').html();
+    var svgUrl = '/assets/img/svg/symbols/svg/symbols.svg';
+    var cssUrl = '/assets/img/svg/svg.css';
+    $.get(svgUrl, function(data) {
+      SVG = new XMLSerializer().serializeToString(data.documentElement);
       document.querySelector("body").insertAdjacentHTML("afterbegin", SVG);
-      $('#data-svg').remove();
     });
-    $('body').append('<div id="data-css"></div>');
-    $('#data-css').load(cssUrl, function(result) {
-      STYLE = $('#data-css').html();
-      document.querySelector("head").insertAdjacentHTML("afterbegin", STYLE);
-      $('#data-css').remove();
-    });
+    $('head').append('<style type="text/css" id="data-css"></style>');
+    $('#data-css').load(cssUrl);
 
   };
 
